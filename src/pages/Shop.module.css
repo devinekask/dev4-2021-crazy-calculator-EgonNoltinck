@@ -1,0 +1,17 @@
+@value tokens: "../styles/tokens.module.css";
+@value spacer1, spacer2, primaryColor, fontSizeL from tokens;
+
+.container{
+    margin: auto spacer2;
+}
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: fontSizeL;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}

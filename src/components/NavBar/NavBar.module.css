@@ -1,0 +1,20 @@
+@value tokens: "../../styles/tokens.module.css";
+@value primaryColor, fontSizeL, spacer2 from tokens;
+
+.list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 2rem spacer2;
+}
+
+.link {
+  text-decoration: none;
+  padding-left: spacer2;
+  color: black;
+}
+
+.active {
+  color: primaryColor;
+  text-decoration: underline;
+}

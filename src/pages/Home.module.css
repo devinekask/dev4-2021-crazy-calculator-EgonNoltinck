@@ -1,0 +1,144 @@
+@value tokens: "../styles/tokens.module.css";
+@value spacer1, spacer2, primaryColor, fontSizeM, lightGray from tokens;
+
+.grid{
+    display: grid;
+    height: 44rem;
+    padding-bottom: 11rem;
+    grid-template-areas:    ". quantity ."
+                            "height trees trees"
+                            ". width count";
+    grid-template-rows: 4rem 100% 4rem;
+    grid-template-columns: 1fr 3fr;
+}
+
+.quantity{
+    grid-area: quantity;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.label{
+    margin-bottom: spacer1;
+}
+
+.height{
+    grid-area: height;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0rem;
+    transform: rotate(-90deg);
+}
+
+.width{
+    grid-area: width;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.count{
+    grid-area: count;
+    margin-right: 10rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    place-content: space-around;
+
+    background-color: lightGray;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+
+    box-shadow: 5px 10px 18px #ebebeb;
+}
+
+.trees{
+    grid-area: trees;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.rolls{
+    font-size: fontSizeM;
+}
+
+.rolls_count{
+    margin-bottom: spacer1;
+}
+
+/**** sliders ****/
+
+input[type=range] {
+  width: 10rem;
+  margin: 0.5rem 0;
+  -webkit-appearance: none;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  background: lightGray;
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 0.53rem;
+  cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: primaryColor;
+  border-radius: 3.13rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #dbdbdb;
+}
+input[type=range]::-moz-range-track {
+  background: lightGray;
+  border-radius: 1.56rem;
+  width: 100%;
+  height: 0.525rem;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: primaryColor;
+  border-radius: 3.13rem;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  border-width: 1.1rem 0;
+  width: 100%;
+  height: 0.525;
+}
+input[type=range]::-ms-fill-lower {
+  background: #dbdbdb;
+  border-radius: 3.125rem;
+}
+input[type=range]::-ms-fill-upper {
+  background: lightGray;
+  border-radius: 3.125rem;
+}
+
+input[type=range]::-ms-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: primaryColor;
+  border-radius: 3.125rem;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: lightGray;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #dbdbdb;
+}
+
+

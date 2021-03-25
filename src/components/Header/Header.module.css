@@ -1,0 +1,26 @@
+@value tokens: "../../styles/tokens.module.css";
+@value primaryColor, fontSizeXL, fontSizeL, spacer1, spacer2 from tokens;
+
+.container{
+    background-color: primaryColor;
+    height: 18.75rem;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin: auto 0rem;
+    box-shadow: 5px 10px 18px #ebebeb;
+}
+
+.h1{
+    font-size: fontSizeXL;
+    color: white;
+    margin-top: 7rem;
+    margin-right: spacer2;
+}
+
+.subtitle{
+    font-size: fontSizeL;
+    color: white;
+    margin-top: spacer1;
+    margin-right: spacer2;
+}

@@ -1,0 +1,23 @@
+@value tokens: "../../styles/tokens.module.css";
+@value primaryColor, fontSizeL from tokens;
+
+.shopElement {
+  margin: 2rem 2rem;
+  padding: 4rem;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 5px 10px 18px #ebebeb;
+  border-radius: 2rem;
+  width: 45.2%;
+}
+
+.logo {
+  width: 4rem;
+}
+
+.name{
+    font-size: fontSizeL;
+    color: primaryColor;
+    margin-bottom: 2rem;
+    margin-top: -1.5rem;
+    font-weight: 600;
+}
