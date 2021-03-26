@@ -15,12 +15,12 @@ const Tree = ({ height, width, color }) => {
         width: width,
         height: height,
         marginLeft: Math.random() * 20 - 10,
-        marginBottom: Math.random () * 80 - 80,
+        marginBottom: Math.random() * 80 - 80,
       }}
     >
       <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height}>
         <path
-          fill={color ? "#302605" : "#397f03"}
+          fill={color ? "#7CB46B" : "#397f03"}
           d={`M${screenMidX} ${colorMarginTop} L${width} ${stumpY} L0 ${stumpY} `}
         />
         <rect
