@@ -8,16 +8,41 @@
   box-shadow: 5px 10px 18px #ebebeb;
   border-radius: 2rem;
   width: 45.2%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .logo {
   width: 4rem;
 }
 
-.name{
-    font-size: fontSizeL;
-    color: primaryColor;
-    margin-bottom: 2rem;
-    margin-top: -1.5rem;
-    font-weight: 600;
+.name {
+  font-size: fontSizeL;
+  color: primaryColor;
+  margin-bottom: 2rem;
+  margin-top: -1.5rem;
+  font-weight: 600;
+}
+
+.icon{
+  width: 13%;
+  margin-right: 1.5rem;
+}
+
+.button{
+  background-color: primaryColor;
+  text-decoration: none;
+  color: white;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 66%;
+  align-items: center;
+}
+
+#text{
+  text-align: center;
 }

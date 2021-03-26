@@ -1,8 +1,6 @@
 import Header from "../components/Header/Header.js";
 import ShopItem from "../components/ShopItem/ShopItem";
 import styles from "./Shop.module.css";
-// import assets from "../../src/assets/toiletpaper.svg"
-
 
 const shopsData = [
   {
@@ -62,8 +60,6 @@ const shopsData = [
     price: "€0,18/stk",
   },
 ];
-
-//<img alt={assets} src={assets}></img>;
 
 const Shop = () => {
   return (
